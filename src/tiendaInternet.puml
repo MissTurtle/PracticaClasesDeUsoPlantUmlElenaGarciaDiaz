@@ -1,0 +1,17 @@
+@startuml
+:new Actor:
+(Identificarse)
+(Pagar)
+(Elegir mensajero)
+(Confirmar)
+(Registrarse)
+(Pagar con tarjeta)
+(Pagar con transferencia)
+:new Actor: -- (Identificarse)
+:new Actor: -- (Pagar)
+:new Actor: -- (Elegir mensajero)
+:new Actor: -- (Confirmar)
+(Registrarse) .> (Identificarse) : extends
+(Pagar) <|-- (Pagar con tarjeta)
+(Pagar) <|-- (Pagar con transferencia)
+@enduml
