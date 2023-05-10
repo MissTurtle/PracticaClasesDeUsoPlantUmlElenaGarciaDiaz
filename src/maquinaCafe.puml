@@ -8,7 +8,7 @@
 :Cliente: -- (Meter dinero)
 :Cliente: -- (Pedir azucar)
 :Cliente: -- (Pedir Producto)
-:Cliente: -- (Devolver dinero)
+:Cliente: -- (Cancelar)
 (Pedir Producto) .> (Devolver dinero) : include
 (Cancelar) .> (Devolver dinero) : include
 @enduml
