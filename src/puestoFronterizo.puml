@@ -1,0 +1,10 @@
+@startuml
+:Ciudadano:
+:Ciudadano extranjero:
+(Registrar entrada)
+(Tomar huellas)
+:Ciudadano: <|-- :Ciudadano extranjero:
+:Ciudadano: --(Registrar entrada)
+:Ciudadano extranjero: -- (Tomar huellas)
+(Tomar huellas) .> (Registrar entrada) : extends
+@enduml
